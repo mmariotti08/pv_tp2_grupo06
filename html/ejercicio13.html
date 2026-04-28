@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 13</title>
+</head>
+<body>
+
+<script>
+// Función que muestra el arreglo
+const mostrarArreglo = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        document.write(`Elemento ${i}: ${arr[i]} <br>`);
+    }
+};
+
+// Pedir cantidad de números
+let cantidad = parseInt(prompt("¿Cuántos números desea ingresar?"));
+
+// Crear arreglo
+let numeros = [];
+
+// Cargar el arreglo con datos del usuario
+for (let i = 0; i < cantidad; i++) {
+    let num = parseFloat(prompt(`Ingrese el número ${i + 1}:`));
+    numeros.push(num);
+}
+
+// Llamar a la función
+mostrarArreglo(numeros);
+
+</script>
+
+</body>
+</html>
