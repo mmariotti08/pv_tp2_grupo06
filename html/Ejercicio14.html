@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 14</title>
+</head>
+<body>
+
+<script>
+// Función que duplica los valores
+const duplicar = (arr) => {
+    let nuevoArreglo = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        nuevoArreglo.push(arr[i] * 2);
+    }
+
+    return nuevoArreglo;
+};
+
+// Pedir cantidad de números
+let cantidad = parseInt(prompt("¿Cuántos números desea ingresar?"));
+
+// Crear arreglo original
+let numeros = [];
+
+// Cargar datos
+for (let i = 0; i < cantidad; i++) {
+    let num = parseFloat(prompt(`Ingrese el número ${i + 1}:`));
+    numeros.push(num);
+}
+
+// Llamar a la función
+let resultado = duplicar(numeros);
+
+// Mostrar resultados
+for (let i = 0; i < resultado.length; i++) {
+    document.write(`Original: ${numeros[i]} → Duplicado: ${resultado[i]} <br>`);
+}
+
+</script>
+
+</body>
+</html>
