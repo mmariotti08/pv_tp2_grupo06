@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 17</title>
+</head>
+<body>
+    <h1>Ejercicio 17 - Contar letra A</h1>
+
+    <script>
+        const contarLetraA = (texto) => {
+            let contador = 0;
+
+            for (let i = 0; i < texto.length; i++) {
+                if (texto[i] === "a" || texto[i] === "A") {
+                    contador++;
+                }
+            }
+
+            return contador;
+        };
+
+        const texto = prompt("Ingrese un texto:");
+
+        if (!texto) {
+            document.write(`
+                <h2>Error</h2>
+                <p>Debe ingresar un texto válido.</p>
+            `);
+        } else {
+            const resultado = contarLetraA(texto);
+
+            document.write(`
+                <h2>Resultado</h2>
+                <p>Texto ingresado: ${texto}</p>
+                <p>Cantidad de letras 'a': ${resultado}</p>
+            `);
+        }
+    </script>
+</body>
+</html>
