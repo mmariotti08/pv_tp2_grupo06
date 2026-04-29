@@ -2,12 +2,45 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 16</title>
 </head>
 <body>
     <h1>Ejercicio 16 - Sumar rango</h1>
 
-    <script src="../JS/ejercicio16.js"></script>
+    <script>
+        const sumarRango = (numeroInicial, numeroFinal) => {
+            let suma = 0;
+
+            for (let i = numeroInicial; i <= numeroFinal; i++) {
+                suma += i;
+            }
+
+            return suma;
+        };
+
+        const numeroInicial = parseInt(prompt("Ingrese el número inicial:"));
+        const numeroFinal = parseInt(prompt("Ingrese el número final:"));
+
+        if (isNaN(numeroInicial) || isNaN(numeroFinal)) {
+            document.write(`
+                <h2>Error</h2>
+                <p>Debe ingresar solamente números enteros.</p>
+            `);
+        } else if (numeroInicial > numeroFinal) {
+            document.write(`
+                <h2>Error</h2>
+                <p>El número inicial debe ser menor o igual que el número final.</p>
+            `);
+        } else {
+            const resultado = sumarRango(numeroInicial, numeroFinal);
+
+            document.write(`
+                <h2>Resultado</h2>
+                <p>Número inicial: ${numeroInicial}</p>
+                <p>Número final: ${numeroFinal}</p>
+                <p>La suma del rango es: ${resultado}</p>
+            `);
+        }
+    </script>
 </body>
 </html>
