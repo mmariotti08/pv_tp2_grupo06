@@ -1,4 +1,3 @@
-
 let nombre = "Benjamin";
 
 let apellido = "Ortega";
