@@ -1,9 +1,9 @@
 import { obtenerDatos } from "./funciones20.js";
-//import { servicioBenjaminOrtega } from "../services/serviceBenjaminOrtega.js";
-//import { servicioGonzaloPeñalva } from "../services/servicesGonzaloPeñalva.js";
-//import { servicioMarcosSaldaño } from "../services/serviceMarcosSaldaño";
-//import { servicioMatiasMariotti } from "../services/serviceMatiasMariotti.js";
-//import { servicioDiegoCari } from "../services/serviceDiegoCari.js";
+import { servicioBenjaminOrtega } from "../services/serviceBenjaminOrtega.js";
+import { servicioGonzaloPeñalva } from "../services/servicesGonzaloPeñalva.js";
+import { servicioMarcosSaldaño } from "../services/serviceMarcosSaldaño";
+import { servicioMatiasMariotti } from "../services/serviceMatiasMariotti.js";
+import { servicioDiegoCari } from "../services/serviceDiegoCari.js";
 
 const nombreInput = document.querySelector("#nombre");
 const apellidoInput = document.querySelector("#apellido");
