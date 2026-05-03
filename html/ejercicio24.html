@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 24</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            padding: 30px;
+        }
+
+        .contenedor {
+            max-width: 500px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+        }
+
+        .opciones {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        label {
+            background-color: #e5e7eb;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        label:hover {
+            background-color: #dbeafe;
+        }
+
+        #resultado {
+            background-color: #2563eb;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+
+        <h2>Seleccioná un lenguaje de programación</h2>
+
+        <div class="opciones">
+            <label>
+                <input type="radio" name="lenguaje" value="JavaScript">
+                JavaScript
+            </label>
+
+            <label>
+                <input type="radio" name="lenguaje" value="Python">
+                Python
+            </label>
+
+            <label>
+                <input type="radio" name="lenguaje" value="Java">
+                Java
+            </label>
+        </div>
+
+        <p id="resultado">Todavía no seleccionaste ninguna opción.</p>
+    </div>
+
+    <script type="module" src="../JS/ejercicio24.js"></script>
+</body>
+</html>
